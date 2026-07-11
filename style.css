@@ -1,0 +1,1482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+.full-navber {
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    position: sticky;
+}
+
+
+
+.full-navber .main-menu-nav ul {
+    display: flex;
+    /* margin: auto; */
+    padding: 0 30px;
+    list-style: none;
+    margin-left: 690px;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px; */
+}
+
+.full-navber .main-menu-nav ul li {
+    margin: 0 20px;
+    font-size: 18px;
+    line-height: 1.50;
+    color: #878e99;
+    display: block !important;
+    transition: transform 0.5s ease;
+
+}
+
+
+
+.full-navber .main-menu-nav ul li a {
+    text-decoration: none;
+    color: #878e99;
+}
+
+.full-navber .main-menu-nav ul li:hover {
+    transform: translate(8px, -5px);
+}
+
+.full-navber .main-menu-nav ul li a:hover {
+    color: #e1e4e8;
+
+}
+
+.pn-btn {
+    text-decoration: none;
+    color: #878e99;
+    font-size: 18px;
+}
+
+
+
+.header-right .pn-btn {
+    margin-left: 30px;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 18px;
+    color: #ff014f;
+    padding: 17px 19px;
+    line-height: 21px;
+    /* background: #212428; */
+    background: linear-gradient(145deg, #181a1d, #272929);
+    border-radius: 5px;
+    box-shadow: -8px -8px 18px #292a2a;
+}
+
+.header-right .pn-btn:hover {
+    background: #181a1d;
+    box-shadow: -8px -8px 18px #313131;
+}
+
+.hero-header {
+    background-image: url(./images/bg-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-header .hero {
+    display: flex;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #c4cfde;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    padding: 40px;
+}
+
+.hero-header .hero h1 {
+    word-break: break-word;
+    font-style: normal;
+    font-weight: 200;
+}
+
+
+
+.hero-card-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+    padding: 50px 20px;
+}
+
+
+.hero-card {
+    background: linear-gradient(145deg, #181a1d, #272929);
+    border-radius: 15px;
+    padding: 35px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow:
+        -8px -8px 18px #292a2a,
+        8px 8px 18px #111;
+    transition: 0.4s ease;
+}
+
+
+.hero-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.hero-card-icon {
+    display: inline-flex;
+    color: #ff014f;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+.hero-card h2 {
+    color: #e1e4e8;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.hero-card p {
+    color: #878e99;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.banner {
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.banner h1 {
+    color: #ff0055;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#typing {
+    color: #ff0055;
+}
+
+.cursor {
+    color: #ff0055;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* main */
+
+.feature-bar {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    padding: 18px 0;
+}
+
+.feature-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.feature-track:hover {
+    animation-play-state: paused;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-right: 60px;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.check {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: #00d084;
+    color: #fff;
+}
+
+@keyframes marquee {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* Awesome Feature */
+
+
+/* ---- Features Section Base Style ---- */
+.features-section {
+    background-color: #212428;
+    padding: 100px 0;
+    /* ওপরে নিচে স্পেস বাড়ানো হয়েছে */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #f0f4f8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* মেইন কন্টেইনার এখন স্ক্রিনের ৯০% উইডথ (Width) নিবে */
+.features-container {
+    width: 90%;
+    max-width: 1600px;
+    /* বড় মনিটরের জন্য সর্বোচ্চ সীমা */
+    margin: 0 auto;
+}
+
+/* ---- Header (Subtitle + Title) ---- */
+.features-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    color: #ff014f;
+    font-size: 16px;
+    /* ফন্ট সাইজ বড় করা হয়েছে */
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 52px;
+    /* ৪৪px থেকে ৫২px করা হয়েছে */
+    font-weight: 700;
+    color: #c4cfde;
+    letter-spacing: 1px;
+}
+
+/* ---- Cards Layout Grid (4 Columns) ---- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* এক সারিতে ৪টি কার্ড */
+    gap: 35px;
+    /* কার্ডগুলোর মাঝের গ্যাপ বাড়ানো হয়েছে */
+}
+
+/* ---- Feature Card Styling ---- */
+.feature-card {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    padding: 50px 40px;
+    /* কার্ডের ভেতরের জায়গা (Padding) অনেক বাড়ানো হয়েছে */
+    border-radius: 12px;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+
+/* কার্ড হোভার এফেক্ট */
+.feature-card:hover {
+    background: linear-gradient(145deg, #23272b, #1e2024);
+    top: -12px;
+    box-shadow: 15px 15px 25px #17191c, -15px -15px 25px #2c3137;
+}
+
+/* ---- Icon Styling ---- */
+.icon-box {
+    margin-bottom: 35px;
+    font-size: 45px;
+    /* আইকন সাইজ ৩২px থেকে ৪৫px করা হয়েছে */
+    display: inline-block;
+}
+
+/* প্রথম আইকনের কাস্টম ব্যাকগ্রাউন্ড বক্স */
+.icon-purple {
+    background: linear-gradient(145deg, #6b52ef, #8a3ffc);
+    width: 65px;
+    /* বক্সের সাইজ বড় করা হয়েছে */
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 28px;
+    /* ভেতরের আইকন বড় করা হয়েছে */
+}
+
+.icon-purple i {
+    color: #fff !important;
+}
+
+/* ---- Card Text Styling ---- */
+.card-title {
+    font-size: 26px;
+    /* ২২px থেকে ২৬px করা হয়েছে */
+    font-weight: 600;
+    color: #c4cfde;
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.card-description {
+    font-size: 18px;
+    /* ১৬px থেকে ১৮px করা হয়েছে */
+    color: #878e99;
+    line-height: 1.7;
+    /* লাইনের ব্যবধান বাড়ানো হয়েছে রিডিবিলিটির জন্য */
+}
+
+/* ---- Responsive Design (ট্যাবলেট ও মোবাইলের জন্য) ---- */
+@media (max-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* মাঝারি স্ক্রিনে ২ কলাম */
+        gap: 25px;
+    }
+
+    .features-container {
+        width: 95%;
+        /* ছোট স্ক্রিনে উইডথ আরেকটু বাড়বে */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        /* মোবাইলে ১টি করে কলাম */
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+}
+
+
+/* GTmetrix Scores */
+
+/* Reset & Base Styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* Banner Container */
+.announcement-banner {
+    background-color: #121315;
+    padding: 16px 24px;
+    /* উপর-নিচে ও ডানে-বামে জায়গা বাড়ানো হয়েছে */
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inner Layout Wrapper */
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* এলিমেন্টগুলোর মাঝের দূরত্ব বাড়ানো হয়েছে */
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Pill Badge */
+.badge {
+    background-color: #ff0055;
+    color: #ffffff;
+    font-size: 15px;
+    /* ফন্ট সাইজ বাড়ানো হয়েছে (আগে ১৩px ছিল) */
+    font-weight: 600;
+    padding: 8px 20px;
+    /* ব্যাজের ভেতরের জায়গা বাড়ানো হয়েছে */
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+/* Middle Text */
+.banner-text {
+    color: #a0a5b0;
+    font-size: 18px;
+    /* ফন্ট সাইজ বাড়ানো হয়েছে (আগে ১৪px ছিল) */
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Action Link */
+.banner-link {
+    color: #ffffff;
+    font-size: 18px;
+    /* ফন্ট সাইজ বাড়ানো হয়েছে (আগে ১৪px ছিল) */
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+.banner-link:hover {
+    opacity: 0.8;
+}
+
+.banner-link .arrow {
+    margin-left: 6px;
+    display: inline-block;
+}
+
+
+/* একটি সেকশন শেষ  */
+
+
+
+
+
+/* Main Section Container */
+.performance-section {
+    background-color: #191b1e;
+    /* ডার্ক ব্যাকগ্রাউন্ড */
+    padding: 140px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    display: grid;
+    /* ২ কলামের অনুপাত ঠিক করা হয়েছে যেন বাম পাশ পর্যাপ্ত জায়গা পায় */
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 100px;
+    align-items: center;
+}
+
+/* --- Left Column Styling (ফিক্সড করা অংশ) --- */
+.content-col {
+    display: flex;
+    flex-direction: column; 
+    /* উপাদানগুলোকে ওপর-নিচে বা একই কলামে রাখবে */
+    align-items: flex-start; 
+    /* টাইটেল, প্যারাগ্রাফ ও বাটনকে বাম পাশে সমান লাইনে রাখবে */
+    justify-content: center;
+    gap: 30px; 
+    /* উপাদানগুলোর মাঝের লম্বালম্বি দূরত্ব */
+    width: 100%;
+    text-align: left; 
+    /* লেখাগুলো যেন বাম দিক থেকেই শুরু হয় */
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ecf0f3;
+    margin: 0;
+    width: 100%; /* টাইটেল পুরো চওড়া জায়গা নিবে */
+}
+
+.content-col p{
+    
+font-size: 22px;
+    line-height: 1.7;
+    color: #878e99;
+    max-width: 600px; 
+    /* প্যারাগ্রাফটি যাতে সুন্দর দেখায় তার জন্য একটি স্ট্যান্ডার্ড চওড়া সীমা */
+    width: 100%; 
+    /* নিশ্চিত করবে যেন এটি ডানে ছিটকে না যায় */
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+
+
+
+.btn-report {
+    display: inline-block;
+    align-self: flex-start; /* বাটনটি বাম পাশে ফিক্সড থাকবে */
+    background-color: #1e2024;
+    color: #ff014f;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 18px 38px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    transition: all 0.3s ease;
+    margin-top: 10px; /* প্যারাগ্রাফ থেকে বাটনের দূরত্ব সামান্য বাড়ানো হয়েছে */
+}
+
+.btn-report:hover {
+    background-color: #1c1e22;
+    transform: translateY(-3px);
+}
+
+/* --- Right Column (Scores) Styling --- */
+.scores-col {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.scores-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ecf0f3;
+    margin-bottom: 15px;
+}
+
+.progress-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.progress-label {
+    font-size: 22px;
+    color: #c4cfde;
+    font-weight: 600;
+}
+
+/* Progress Bar Background track */
+.progress-bar-container {
+    background: #141517;
+    height: 44px;
+    border-radius: 30px;
+    padding: 6px;
+    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.4), inset -8px -8px 16px rgba(255, 255, 255, 0.05);
+}
+
+/* Gradient Fill Bar */
+.progress-bar {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #6a67ce 0%, #fc6076 100%);
+}
+
+/* Width Helpers */
+.width-100 {
+    width: 100%;
+}
+
+.width-92 {
+    width: 92%;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .scores-title {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Customer feedback  */
+
+
+
+/* ==========================================================================
+   1. মেইন সেকশন ও গ্লোবাল স্টাইল (Theme & Background)
+   ========================================================================== */
+.feedback-section {
+    background-color: #1a1e24; /* স্ক্রিনশটের ডার্ক ব্যাকগ্রাউন্ড */
+    color: #ffffff;
+    padding: 80px 20px;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. হেডার অংশ (Header & Titles)
+   ========================================================================== */
+.header-container {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    color: #f72b50; /* নিখুঁত ম্যাজেন্টা রঙ */
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 85px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.5px;
+    padding-bottom: 50px;
+}
+
+/* ==========================================================================
+   3. স্লাইডার কন্টেইনার (কার্ড বড় ও গ্যাপ বাড়ানোর জন্য সংশোধিত)
+   ========================================================================== */
+.feedback-slider {
+    width: 100%;
+    /* কার্ডের সাইজ বড় করার জন্য উইডথ ১২৪০px থেকে বাড়িয়ে ১৪৪০px করা হয়েছে */
+    max-width: 1440px; 
+    margin: 0 auto;
+    overflow: hidden; /* ডানের এক্সট্রা কার্ড লুকিয়ে রাখার জন্য */
+    position: relative;
+    /* গ্যাপ ও সাইজ বাড়ায় নিচে একটু স্পেস বাড়ানো হলো ডটসগুলোর জন্য */
+    padding-bottom: 65px; 
+}
+
+/* Swiper কে স্লাইড করার সুযোগ দিতে display: flex করা হয়েছে */
+.feedback-slider .swiper-wrapper {
+    display: flex; 
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 50px;
+}
+
+/* ==========================================================================
+   4. রিভিউ কার্ড ডিজাইন (Review Card Design)
+   ========================================================================== */
+.review-card {
+    background-color: #212630; /* স্ক্রিনশটের কার্ড ব্যাকগ্রাউন্ড */
+    border-radius: 12px;
+    /* কার্ড বড় দেখানোর জন্য ভেতরের প্যাডিং ২৫% বাড়ানো হয়েছে */
+    padding: 42px 36px; 
+    margin: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* স্মুথ শ্যাডো */
+    border: 1px solid rgba(255, 255, 255, 0.03); 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto; /* Swiper এর সাথে হাইট অ্যাডজাস্ট করার জন্য */
+}
+
+/* ইউজার প্রোফাইল এরিয়া */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 25px;
+}
+
+.avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #22c55e; /* লোগোর সবুজ ব্যাকগ্রাউন্ড */
+}
+
+.user-meta h4 {
+    margin: 0 0 4px 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.user-meta span {
+    color: #f72b50;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+}
+
+/* রিভিউ ক্যাটাগরি ও টেক্সট */
+.category {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.feedback-text {
+    color: #9299a6; 
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+    flex-grow: 1; 
+}
+
+/* ==========================================================================
+   5. রেটিং ব্যাজ ও স্টার (Rating Badge & Stars)
+   ========================================================================== */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: auto; 
+}
+
+.rating-badge {
+    background-color: #fab515; 
+    color: #000000;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.stars {
+    color: #fab515;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+/* ==========================================================================
+   6. পেজ ডটস (Pagination Dots Style)
+   ========================================================================== */
+.swiper-pagination {
+    position: absolute !important;
+    bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #383f4d !important;
+    opacity: 1 !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f72b50 !important; /* একটিভ ডট লাল থাকবে */
+}
+
+
+
+ /* বাটন তৈরি */
+
+
+ .custom-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.dot-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    /* কালো এবং গ্রে গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+    background: linear-gradient(135deg, #000000 10%, #808080 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ক্লিক করার পর বা একটিভ অবস্থার জন্য লাল কালার */
+.dot-btn.active {
+    background: #f72b50;
+    /* transform: scale(1.2);  */
+    /* বাটনটি একটু বড় দেখানোর জন্য (ঐচ্ছিক) */
+}
+
+
+
+
+
+/* স্লাইডারের কন্টেইনার ফিক্স */
+.feedback-slider .swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important; /* এটি সব কার্ডের হাইট সমান রাখবে */
+    gap: 24px !important;
+    padding: 15px 0 !important;
+}
+
+/* প্রতিটি কার্ডের সাইজ সবসময় সমান রাখার মূল সিএসএস */
+.review-card {
+    flex: 0 0 calc((100% - 48px) / 3) !important; /* ডেক্সটপে পারফেক্ট ৩টি কার্ডের উইডথ */
+    min-width: calc((100% - 48px) / 3) !important;
+    max-width: calc((100% - 48px) / 3) !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; /* কার্ডের ভেতরের কন্টেন্ট সমান দূরত্বে রাখবে */
+    height: auto !important; /* হাইট স্বয়ংক্রিয়ভাবে সবচেয়ে বড় কার্ডের সমান হবে */
+}
+
+/* রেসপনসিভ: ছোট স্ক্রিনের জন্য ফিক্স */
+@media (max-width: 1024px) {
+    .review-card {
+        flex: 0 0 calc((100% - 24px) / 2) !important; /* ট্যাবে ২টি */
+        min-width: calc((100% - 24px) / 2) !important;
+        max-width: calc((100% - 24px) / 2) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .review-card {
+        flex: 0 0 100% !important; /* মোবাইলে ১টি */
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+
+
+
+/* কন্টেইনার স্টাইল */
+.faq-container {
+    max-width: 800px;
+    font-family: sans-serif;
+}
+
+.faq-item {
+    border-bottom: 1px solid #2d2f36; /* স্ক্রিনশটের মতো হালকা বর্ডার */
+    padding: 15px 0;
+}
+
+/* প্রশ্ন বা বাটনের স্টাইল */
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ecf0f3; /* হালকা সাদা টেক্সট */
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* একটিভ প্রশ্নের কালার পরিবর্তন (ঐচ্ছিক - স্ক্রিনশটের মতো পিঙ্ক কালার চাইলে) */
+.faq-question.active {
+    color: #ff014f; 
+}
+
+/* উত্তর লুকিয়ে রাখার মূল ট্রিক (স্মুথ ট্রানজিশন সহ) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); /* স্মুথ ওপেন/ক্লোজ */
+}
+
+.faq-answer p {
+    padding: 10px 0;
+    font-size: 15px;
+    color: #878e99; /* ধূসর রঙের উত্তর */
+    line-height: 1.7;
+}
+
+/* যখন উত্তরটি একটিভ হবে তখন এটি দেখাবে */
+.faq-item.open .faq-answer {
+    max-height: 1000px; /* পর্যাপ্ত হাইট যাতে সব টেক্সট ধরে */
+    transition: max-height 0.5s ease-in-out;
+}
+
+
+
+/* Do you have any Question */
+
+.page-wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    margin: 150px auto;           /* বামে ও ডানে সমান মার্জিন দিয়ে সেন্টারে রাখবে */
+}
+
+
+
+
+/* Flexbox কন্টেইনার (FAQ ও কার্ড পাশাপাশি রাখার জন্য) */
+.page-wrapper {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    gap: 40px;
+}
+
+/* --- বাম পাশের FAQ সেকশন --- */
+.faq-full-section {
+    flex: 2; /* বাম পাশের অংশটি ২ ভাগ জায়গা নেবে */
+}
+
+.faq-header {
+    margin-bottom: 55px;
+}
+
+/* প্রোফাইল ছবিগুলোর ওভারল্যাপিং ডিজাইন */
+.avatar-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.avatar-group img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 5px solid #1e2125;
+    margin-right: -12px;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.avatar-group img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 5px solid #1e2125;
+    margin-right: -25px; /* ডিফল্ট ওভারল্যাপ একটু বাড়ানো হয়েছে */
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* স্মুথ অ্যানিমেশনের জন্য */
+}
+
+/* ১. পুরো গ্রুপের ওপর হোভার করলে ইমেজগুলো একটু ছড়িয়ে যাবে */
+.avatar-group:hover img {
+    margin-right: -5px; /* ওভারল্যাপ কমে ইমেজগুলো আলাদা হবে */
+}
+
+/* ২. নির্দিষ্ট কোনো ইমেজের ওপর হোভার করলে সেটি পপ-আপ হবে */
+.avatar-group img:hover {
+    transform: translateY(-10px) scale(1.15); /* কিছুটা উপরে উঠবে এবং বড় হবে */
+    border-color: #f9004d; /* ইনবিও থিমের লাল বর্ডার আসবে */
+    box-shadow: 0px 15px 30px rgba(249, 0, 77, 0.4); /* লাল গ্লো ইফেক্ট */
+    z-index: 10; /* হোভার হওয়া ইমেজটি সবার উপরে চলে আসবে */
+}
+
+
+
+/* লাল ছোট সাবটাইটেল */
+.faq-subtitle {
+    display: block;
+    color: #ff014f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* প্রধান FAQ টাইটেল */
+.faq-title {
+    color: #ecf0f3;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* একোর্ডিয়ন ডিজাইন */
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: 3px solid #2d3139;
+    padding: 20px 0;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #c4cfde;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+.faq-question:hover {
+    color: #f9004d; /* হোভার করলে লাল রঙ হবে */
+}
+
+.faq-answer {
+    padding-top: 10px;
+    color: #878e99;
+    font-size: 15px;
+    line-height: 1.6;
+    display: none; /* জাভাস্ক্রিপ্ট দিয়ে ওপেন/ক্লোজ করার জন্য এটি ডিফল্ট হাইড থাকে */
+}
+
+
+
+.faq-answer p {
+    font-size: 20px;          /* আগে ১৫ পিক্সেল ছিল, এখন ১৮ পিক্সেল করা হয়েছে */
+    line-height: 1.8;         /* ফন্ট বড় হওয়ার সাথে লাইনের মাঝের গ্যাপও একটু বাড়ানো হয়েছে */
+    color: #878e99;           /* হালকা ধূসর রঙ যা ইনবিও থিমের সাথে মিলে যায় */
+    margin-top: 10px;
+}
+
+
+/* --- ডান পাশের সাপোর্ট সাইডবার --- */
+.support-sidebar-container {
+    flex: 1; /* ডান পাশের অংশটি ১ ভাগ জায়গা নেবে */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ইনবিও থিমের মতো নিওমরফিক শ্যাডো কার্ড ইফেক্ট */
+.support-card {
+    background: linear-gradient(145deg, #0e1216, #202429);
+    box-shadow: 10px 10px 19px #48242f, -10px -10px 19px #48242f;
+    border-radius: 10px;
+    padding: 35px;
+    transition: transform 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px); /* হোভার করলে হালকা উপরে উঠবে */
+    box-shadow: 10px 10px 19px #49345d, -10px -10px 19px #49345d;
+}
+
+.card-icon {
+    color: #f9004d;
+    margin-bottom: 35px;
+}
+
+.card-title {
+    color: #ecf0f3;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #878e99;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* কার্ডের ভেতরের বাটন স্টাইল */
+.card-btn {
+    display: inline-block;
+    background: #1e2024;
+    color: #f9004d;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px #16181b, -5px -5px 10px #262a2f;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.card-btn:hover {
+    background: #f9004d;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+/* মেটা টেক্সট ডিজাইন (সোম-শুক্র এবং ২৪ ঘণ্টা) */
+.support-meta {
+    margin-top: 25px;
+    border-top: 1px solid #2d3139;
+    padding-top: 20px;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.meta-label {
+    color: #878e99;
+}
+
+.meta-value {
+    color: #c4cfde;
+    font-weight: 500;
+}
+
+/* রেসপন্সিভ ডিজাইন (মোবাইল বা ছোট স্ক্রিনের জন্য নিচে নিচে চলে আসবে) */
+@media (max-width: 991px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    .faq-title {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+body {
+    /* background-color: #1e2125;  */
+    /* ইমেজের মতো ডার্ক ব্যাকগ্রাউন্ড রং */
+    /* padding: 50px;  */
+    /* লাইনের চারপাশে কিছুটা ফাঁকা জায়গা রাখার জন্য */
+}
+
+.divider-line {
+    width: 100%; /* লাইনটি পুরো স্ক্রিন জুড়ে থাকবে, প্রয়োজন অনুযায়ী কমাতে পারেন (যেমন: 80%) */
+    max-width: 70%; /* লাইনের সর্বোচ্চ দৈর্ঘ্য */
+    height: 3px; /* লাইনটি একদম চিকন রাখার জন্য */
+    background-color: #535b6a; /* ইমেজের লাইনের হালকা ধূসর/ডার্ক রং */
+    margin: 0 auto; /* লাইনটিকে স্ক্রিনের মাঝখানে (Center) রাখার জন্য */
+    opacity: 0.9; /* লাইনটিকে আরেকটু হালকা ও রিয়্যালিস্টিক দেখানোর জন্য ওয়ান-কাইন্ড অফ ট্রান্সপারেন্সি */
+}
+
+
+
+
+
+
+/* বেসিক রিসেট */
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; */
+}
+
+body {
+    /* background-color: #1e2125;  */
+    /* ইমেজের ডার্ক ব্যাকগ্রাউন্ড রং */
+    /* color: #ffffff; */
+}
+
+/* পুরো কন্টেন্টকে সেন্টারে রাখার মূল র্যাপার */
+.main-wrapper {
+    max-width: 70%; /* লাইনের সর্বোচ্চ দৈর্ঘ্য এবং কন্টেন্টের এলাইনমেন্ট ঠিক রাখবে */
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* সবকিছুকে মাঝ বরাবর সোজা রাখবে */
+}
+
+/* পারচেজ সেকশন স্টাইল */
+.purchase-section {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px; /* লাইন থেকে সেকশনের দূরত্ব */
+}
+
+.profile-area {
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #2d3139;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.subtitle {
+    color: #ff014f; /* নিয়ন রেড কালার */
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.main-title {
+    font-size: 67px;
+    font-weight: 700;
+    color: #e4e6ea;
+    margin-bottom: 15px;
+}
+
+.description {
+    align-items: center;
+    margin-left: 520px;
+    color: #878e99;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* বাটন স্টাইল */
+.purchase-btn {
+    display: inline-block;
+    padding: 18px 38px;
+    background-color: #212428;
+    color: #ff014f;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; /* নিওমরফিজম শ্যাডো */
+    transition: all 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #ff014f;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 1, 79, 0.3);
+}
+
+/* পেজের মাঝ বরাবর থাকা ডিভাইডার লাইন */
+.divider-line {
+    width: 100%;              /* পুরো স্ক্রিন জুড়ে থাকবে (max-width পর্যন্ত) */
+    height: 1px;              /* লাইনটি একদম চিকন রাখার জন্য */
+    background-color: #2d3139; /* ইমেজের লাইনের হালকা ধূসর/ডার্ক রং */
+    opacity: 0.9;             /* রিয়্যালিস্টিক ও হালকা দেখানোর জন্য */
+}
+
+/* রেসপন্সিভ ডিজাইন (মোবাইলের জন্য) */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 36px;
+    }
+    .subtitle {
+        font-size: 11px;
+    }
+    .description {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+/* বেসিক রিসেট */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* background-color: #1e2125; ইমেজের ব্যাকগ্রাউন্ড কালার */
+}
+
+/* ফুটার মেইন সেকশন */
+.footer-section {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #1e2125;
+}
+
+/* ফুটার কন্টেইনার - যা এলিমেন্টগুলোকে দুই পাশে রাখবে এবং উপরে একটি লাইন তৈরি করবে */
+.footer-container {
+    max-width: 70%; /* লাইনের এবং ফুটারের সর্বোচ্চ দৈর্ঘ্য */
+    margin: 0 auto;
+    padding: 30px 20px 0 20px; /* উপরে স্পেস দিয়ে লাইন থেকে দূরত্ব বজায় রাখা */
+    border-top: 1px solid #2d3139; /* আপনার শেয়ার করা ইমেজের সেই চিকন ডিভাইডার লাইনটি */
+    
+    display: flex;
+    justify-content: space-between; /* কপিরাইট বামে এবং লিঙ্কগুলো ডানে পাঠাবে */
+    align-items: center;
+}
+
+/* কপিরাইট টেক্সট স্টাইল */
+.copyright p {
+    color: #878e99; /* হালকা ধূসর টেক্সট কালার */
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* ফুটার লিঙ্ক স্টাইল */
+.footer-links a {
+    color: #878e99;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 30px; /* দুটি লিঙ্কের মাঝখানের দূরত্ব */
+    transition: color 0.3s ease;
+}
+
+/* লিঙ্কের ওপর মাউস নিলে কালার চেঞ্জ হওয়ার জন্য হোভার ইফেক্ট */
+.footer-links a:hover {
+    color: #ff014f; /* হোভার করলে লালচে/পিঙ্ক কালার হবে */
+}
+
+/* রেসপন্সিভ ডিজাইন (মোবাইল স্ক্রিনের জন্য) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* মোবাইলে একটার নিচে আরেকটা আসবে */
+        gap: 15px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .footer-links a {
+        margin: 0 15px; /* মোবাইলে দুই পাশে সমান দূরত্ব */
+    }
+}

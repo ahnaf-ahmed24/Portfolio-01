@@ -1,0 +1,366 @@
+/* ---- General Setup & Fonts ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #333;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: minmax(300px, 750px) minmax(280px, 380px);
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---- Reusable Card Styling ---- */
+.create-account,
+.order-summary,
+.footer-box {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   1. CREATE ACCOUNT SECTION (Left Main Box)
+   ========================================================================== */
+.create-account {
+    grid-column: 1;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    /* প্যাডিং বাড়ানো হয়েছে */
+    border-bottom: 1px solid #eeeeee;
+}
+
+.account-header h2 {
+    font-size: 26px;
+    /* ২৪px থেকে ২৬px করা হয়েছে */
+    font-weight: 600;
+    color: #222;
+}
+
+.sign-in {
+    font-size: 16px;
+    /* ১৪px থেকে ১৬px করা হয়েছে */
+    color: #555;
+}
+
+.sign-in a {
+    color: #fff;
+    background-color: #7a7a7a;
+    padding: 8px 18px;
+    /* বাটন সাইজ বড় করা হয়েছে */
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.sign-in a:hover {
+    background-color: #666;
+}
+
+/* Social Buttons */
+.social-buttons {
+    padding: 30px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* বোতামগুলোর দূরত্ব বাড়ানো হয়েছে */
+}
+
+.social-btn {
+    width: 100%;
+    padding: 15px;
+    /* ক্লিক করার এরিয়া ও সাইজ বড় করা হয়েছে */
+    background: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 17px;
+    /* ১৫px থেকে ১৭px করা হয়েছে */
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background 0.2s;
+}
+
+.social-btn:hover {
+    background: #f9f9f9;
+}
+
+.social-btn .fa-google {
+    color: #4285F4;
+}
+
+.social-btn .fa-apple {
+    color: #000000;
+}
+
+.social-btn .fa-facebook {
+    color: #1877F2;
+}
+
+.social-btn .fa-envelope {
+    color: #666666;
+}
+
+/* Newsletter Box */
+.newsletter {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 10px 30px 0 30px;
+    cursor: pointer;
+}
+
+.newsletter input[type="checkbox"] {
+    margin-top: 5px;
+    transform: scale(1.4);
+    /* চেকবক্সটি বড় করা হয়েছে */
+    accent-color: #0071bc;
+}
+
+.newsletter span {
+    font-size: 16px;
+    /* ১৪px থেকে ১৬px করা হয়েছে */
+    color: #444;
+    line-height: 1.5;
+}
+
+.unsubscribe {
+    font-size: 14px;
+    /* ১২px থেকে ১৪px করা হয়েছে */
+    color: #777;
+    padding-left: 62px;
+    /* চেকবক্সের সাথে এলাইন করার জন্য */
+    margin-top: 6px;
+}
+
+/* Terms */
+.terms {
+    text-align: center;
+    font-size: 15px;
+    /* ১৩px থেকে ১৫px করা হয়েছে */
+    color: #666;
+    margin: 40px 0 25px 0;
+}
+
+.terms a {
+    color: #444;
+    text-decoration: underline;
+}
+
+/* Footer Button Row */
+.account-footer {
+    background: #fcfcfc;
+    border-top: 1px solid #eeeeee;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-footer button {
+    background-color: #74b436;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    /* বাটন সাইজ বড় করা হয়েছে */
+    font-size: 16px;
+    /* ১৪px থেকে ১৬px করা হয়েছে */
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.account-footer button:hover {
+    background-color: #639a2e;
+}
+
+
+/* ==========================================================================
+   2. ORDER SUMMARY SECTION (Right Sidebar)
+   ========================================================================== */
+.order-summary {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: fit-content;
+    padding: 25px;
+}
+
+.order-summary h2 {
+    font-size: 22px;
+    /* ১৮px থেকে ২২px করা হয়েছে */
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    /* ১৪px থেকে ১৬px করা হয়েছে */
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.summary-item i {
+    color: #0071bc;
+    font-size: 14px;
+    margin-left: 6px;
+    cursor: help;
+}
+
+.order-summary hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.summary-total h3 {
+    font-size: 19px;
+    /* ১৬px থেকে ১৯px করা হয়েছে */
+    font-weight: 700;
+    color: #222;
+}
+
+.secure-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #999;
+    font-size: 16px;
+    /* ১৪px থেকে ১৬px করা হয়েছে */
+}
+
+
+/* ==========================================================================
+   3. CHECKOUT FOOTER (Billing, Payment, Copyright)
+   ========================================================================== */
+.checkout-footer {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-box {
+    padding: 25px 30px;
+}
+
+.footer-box h2 {
+    font-size: 22px;
+    /* ১৮px থেকে ২২px করা হয়েছে */
+    font-weight: 600;
+    color: #777;
+}
+
+/* Copyright Row */
+.copyright {
+    grid-column: 1 / span 2;
+    font-size: 14px;
+    /* ১২px থেকে ১৪px করা হয়েছে */
+    color: #888;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   আইকন সাইজ এবং অফিশিয়াল কালার গাইডলাইন
+   ========================================================================== */
+
+/* ---- সোশ্যাল বাটনের ভেতরের আইকন (Google, Apple, Facebook, Email) ---- */
+.social-btn i {
+    font-size: 26px;
+    /* সাইজ ২২px থেকে বাড়িয়ে ২৬px করা হয়েছে */
+    margin-right: 10px;
+    /* টেক্সট থেকে দূরত্ব আরেকটু বাড়ানো হয়েছে */
+    vertical-align: middle;
+    /* টেক্সটের সাথে পারফেক্টলি এলাইন করার জন্য */
+}
+
+/* আইকনগুলোর অফিশিয়াল ব্র্যান্ড কালার */
+.social-btn .fa-google {
+    color: #4285F4;
+    /* অফিশিয়াল গুগল ব্লু */
+}
+
+.social-btn .fa-apple {
+    color: #000000;
+    /* অফিশিয়াল অ্যাপল ব্ল্যাক */
+}
+
+.social-btn .fa-facebook {
+    color: #1877F2;
+    /* অফিশিয়াল ফেসবুক ব্লু */
+}
+
+.social-btn .fa-envelope {
+    color: #444444;
+    /* স্ট্যান্ডার্ড ইমেইল ডার্ক গ্রে */
+}
+
+
+/* ---- অর্ডার সামারির ইনফো আইকন (Handling Fee ⓘ) ---- */
+.summary-item i {
+    color: #0071bc;
+    /* অফিশিয়াল ইনফো ব্লু */
+    font-size: 18px;
+    /* সাইজ ১৬px থেকে বাড়িয়ে ১৮px করা হয়েছে */
+    margin-left: 8px;
+    cursor: help;
+    vertical-align: middle;
+}
+
+
+/* ---- সেকিউর চেকাউট লক আইকন (🔒 Secure checkout) ---- */
+.secure-checkout i {
+    font-size: 20px;
+    /* সাইজ ১৮px থেকে বাড়িয়ে ২০px করা হয়েছে */
+    color: #8c8c8c;
+    /* একটু স্পষ্ট ডার্ক গ্রে করা হয়েছে */
+    vertical-align: middle;
+}
+
+
+/* ---- Responsive Design ---- */
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .create-account,
+    .order-summary,
+    .checkout-footer {
+        grid-column: 1;
+    }
+
+    .order-summary {
+        grid-row: auto;
+    }
+}
