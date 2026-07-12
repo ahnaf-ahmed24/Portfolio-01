@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Login</title>
+    <link rel="stylesheet" href="../style/sopport.css">
+</head>
+<body>
+    <div class="login-container">
+    <div class="info-panel">
+        <div>
+            <div class="logo-area">
+                <div class="logo-icon">R</div>
+                <div class="logo-text">Support Login</div>
+            </div>
+            <div class="info-content">
+                <h4>Welcome to Rainbow-Themes support ticket system</h4>
+                <p>A member of our support team will follow up with you within 01 business day at most, preferably 12 hours. Time Zone (GMT +6)</p>
+                <p class="status-close">FRI - SAT : CLOSE</p>
+                <p>Thank you !!!</p>
+            </div>
+        </div>
+        <a href="../html/create-an-account.html" class="btn-create-account">Create an account</a>
+    </div>
+
+    <div class="form-panel">
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            
+            <div class="flex-actions">
+                <label class="remember-me">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn-login" disabled>Login</button>
+            
+            <div class="or-separator">Or</div>
+
+            <button type="button" class="btn-envato">
+                Envato Login <i class="fa-solid fa-leaf"></i>
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

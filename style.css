@@ -643,83 +643,6 @@ font-size: 22px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Customer feedback  */
 
 
@@ -1272,15 +1195,6 @@ font-size: 22px;
 
 
 
-
-
-body {
-    /* background-color: #1e2125;  */
-    /* ইমেজের মতো ডার্ক ব্যাকগ্রাউন্ড রং */
-    /* padding: 50px;  */
-    /* লাইনের চারপাশে কিছুটা ফাঁকা জায়গা রাখার জন্য */
-}
-
 .divider-line {
     width: 100%; /* লাইনটি পুরো স্ক্রিন জুড়ে থাকবে, প্রয়োজন অনুযায়ী কমাতে পারেন (যেমন: 80%) */
     max-width: 70%; /* লাইনের সর্বোচ্চ দৈর্ঘ্য */
@@ -1296,18 +1210,6 @@ body {
 
 
 /* বেসিক রিসেট */
-* {
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; */
-}
-
-body {
-    /* background-color: #1e2125;  */
-    /* ইমেজের ডার্ক ব্যাকগ্রাউন্ড রং */
-    /* color: #ffffff; */
-}
 
 /* পুরো কন্টেন্টকে সেন্টারে রাখার মূল র্যাপার */
 .main-wrapper {
@@ -1356,13 +1258,19 @@ body {
     margin-bottom: 15px;
 }
 
-.description {
-    align-items: center;
-    margin-left: 520px;
-    color: #878e99;
+
+
+.subtitle-2 p{
     font-size: 22px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    line-height: 1.7;
+    color: #878e99;
+    max-width: 100%; 
+    /* প্যারাগ্রাফটি যাতে সুন্দর দেখায় তার জন্য একটি স্ট্যান্ডার্ড চওড়া সীমা */
+    width: 100%; 
+    /* নিশ্চিত করবে যেন এটি ডানে ছিটকে না যায় */
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 /* বাটন স্টাইল */
@@ -1422,9 +1330,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    /* background-color: #1e2125; ইমেজের ব্যাকগ্রাউন্ড কালার */
-}
 
 /* ফুটার মেইন সেকশন */
 .footer-section {

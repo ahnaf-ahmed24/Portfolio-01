@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopport - Register</title>
+    <link rel="stylesheet" href="../style/create-an-account.css">
+</head>
+<body>
+    <div class="login-container">
+    <div class="info-panel">
+        <div>
+            <div class="logo-area">
+                <div class="logo-icon">R</div>
+                <div class="logo-text">Register for support</div>
+            </div>
+            <div class="info-content">
+                <p>Are you having trouble? Have no fear we are here to help you!</p>
+                <p>Just fill in your details to gain access to our support system and create a support ticket.</p>
+                <p>Our support team will then be in touch as soon as possible to help you.</p>
+            </div>
+        </div>
+        <a href="../html/support.html" class="btn-create-account">I already have an account.</a>
+    </div>
+
+    <div class="form-panel">
+        <form onsubmit="event.preventDefault();">
+            <div class="form-row">
+                <div class="form-group flex-1">
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="form-group flex-1">
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Repeat Your Password" required>
+            </div>
+            
+            <div class="policy-action">
+                <label class="checkbox-container">
+                    <input type="checkbox" required> I've read and accept the Privacy Policy
+                </label>
+                <p class="terms-text">
+                    By signing up, you agree to our <a href="#">Terms of Service</a>. Learn how we collect and use your data in our <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+
+            <button type="submit" class="btn-login" disabled>Register</button>
+            
+            <div class="or-separator">Or</div>
+
+            <button type="button" class="btn-envato">
+                Register with Envato <i class="fa-solid fa-leaf"></i>
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
