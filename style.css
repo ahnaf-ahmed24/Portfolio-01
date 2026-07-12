@@ -12,75 +12,93 @@ html {
 }
 
 
-
+/* --- নেভবার মেইন কন্টেইনার --- */
 .full-navber {
     font-family: "Roboto Mono", monospace;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
-    position: sticky;
-}
-
-/* --- নেভবার স্টাইল --- */
-.full-navber {
-    position: fixed; /* স্ক্রল করলেও যেন ওপরে আটকে থাকে */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999; /* যেন কোনো এলিমেন্ট এর ওপরে চলে না যায় */
-    background-color: #1e2125; /* ডার্ক ব্যাকগ্রাউন্ড */
-    border-bottom: 1px solid #2d3136; /* নিচে হালকা বর্ডার */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* নিচের দিকে হালকা শ্যাডো */
+    z-index: 9999; 
+    background-color: #1e2125; 
+    border-bottom: 1px solid #2d3136; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); 
     
     display: flex;
     justify-content: space-between; /* লোগো, মেনু ও বাটনকে সমান দূরত্বে রাখবে */
     align-items: center;
-    padding: 15px 50px; /* ডানে-বামে এবং ওপরে-নিচে স্পেসিং */
+    padding: 15px 50px; 
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
 
 /* লোগো পার্ট */
 .nav-left img {
-    height: auto; /* লোগোর সাইজ লম্বায় সেট করার জন্য */
+    height: auto; 
     width: auto;
     object-fit: contain;
-    border-radius: 10%; /* ছবির ইনবিও লোগোর মতো গোল করার জন্য */
+    border-radius: 10%; 
 }
 
 /* মাঝখানের মেনু পার্ট */
-.main-menu-nav ul {
+.full-navber .main-menu-nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 30px; 
-    /* মেনুর ভেতরের লিংকগুলোর পারস্পরিক দূরত্ব */
+    margin-left: 650px;
+    gap: 25px; /* মেনুর ভেতরের লিংকগুলোর পারস্পরিক দূরত্ব */
 }
 
+.full-navber .main-menu-nav ul li {
+    font-size: 14px;
+    line-height: 1.50;
+    transition: transform 0.5s ease;
+    white-space: nowrap; /* লেখা যেন কোনোভাবেই ভেঙে ২ লাইনে না যায় */
+}
+
+.full-navber .main-menu-nav ul li a {
+    text-decoration: none;
+    color: #878e99;
+    display: block;
+}
+
+/* হোভার ইফেক্ট */
+.full-navber .main-menu-nav ul li:hover {
+    transform: translate(8px, -5px);
+}
+
+.full-navber .main-menu-nav ul li a:hover {
+    color: #e1e4e8;
+}
 
 /* ডানপাশের PURCHASE NOW বাটন পার্ট */
 .pn-btn {
-    display: inline-block;
+    text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    border-radius: 6px;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; 
-    /* নিওমরফিজম শ্যাডো ইফেক্ট */
     transition: all 0.3s ease;
+    font-size: 14px;
+    white-space: nowrap; /* বাটনের লেখাও এক লাইনে রাখবে */
 }
 
-/* বাটনে মাউস নিলে ব্যাকগ্রাউন্ড ও কালার পরিবর্তন */
-.pn-btn:hover {
-    background-color: #ff014f;
+.header-right .pn-btn {
+    display: inline-block;
+    color: #ff014f;
+    padding: 12px 25px; /* ওপরে-নিচে এবং ডানে-বামে পারফেক্ট স্পেসিং */
+    background: linear-gradient(145deg, #181a1d, #272929);
+    border-radius: 6px;
+    box-shadow: -8px -8px 18px #292a2a, 10px 10px 19px #1c1e22;
+}
+
+.header-right .pn-btn:hover {
+    background: #181a1d;
     color: #ffffff;
     box-shadow: 0 5px 15px rgba(255, 1, 79, 0.4);
-    transform: translateY(-2px); /* হালকা একটু ওপরে উঠবে */
+    transform: translateY(-2px);
 }
 
-/* --- মোবাইল রেসপনসিভ (ঐচ্ছিক কিন্তু দরকারি) --- */
+/* --- মোবাইল রেসপনসিভ --- */
 @media (max-width: 992px) {
     .full-navber {
         padding: 15px 20px;
@@ -88,68 +106,6 @@ html {
     .main-menu-nav {
         display: none;
     }
-}
-
-
-.full-navber .main-menu-nav ul {
-    display: flex;
-    /* margin: auto; */
-    padding: 0 30px;
-    list-style: none;
-    margin-left: 690px;
-}
-
-.full-navber .main-menu-nav ul li {
-    margin: 0 20px;
-    font-size: 14px;
-    line-height: 1.50;
-    color: #878e99;
-    display: block !important;
-    transition: transform 0.5s ease;
-
-}
-
-
-
-.full-navber .main-menu-nav ul li a {
-    text-decoration: none;
-    color: #878e99;
-}
-
-.full-navber .main-menu-nav ul li:hover {
-    transform: translate(8px, -5px);
-}
-
-.full-navber .main-menu-nav ul li a:hover {
-    color: #e1e4e8;
-
-}
-
-.pn-btn {
-    text-decoration: none;
-    color: #878e99;
-    font-size: 14px;
-}
-
-
-
-.header-right .pn-btn {
-    margin-left: 30px;
-    justify-content: flex-end;
-    display: flex;
-    margin-right: 18px;
-    color: #ff014f;
-    padding: 17px 19px;
-    line-height: 21px;
-    /* background: #212428; */
-    background: linear-gradient(145deg, #181a1d, #272929);
-    border-radius: 5px;
-    box-shadow: -8px -8px 18px #292a2a;
-}
-
-.header-right .pn-btn:hover {
-    background: #181a1d;
-    box-shadow: -8px -8px 18px #313131;
 }
 
 .hero-header {
