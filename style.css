@@ -86,7 +86,7 @@ html {
         padding: 15px 20px;
     }
     .main-menu-nav {
-        display: none; /* মোবাইলে মেনু হাইড রাখার জন্য, পরবর্তীতে হ্যামবার্গার মেনু করতে পারেন */
+        display: none;
     }
 }
 
@@ -97,9 +97,6 @@ html {
     padding: 0 30px;
     list-style: none;
     margin-left: 690px;
-    /* margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-inline-start: 40px; */
 }
 
 .full-navber .main-menu-nav ul li {
