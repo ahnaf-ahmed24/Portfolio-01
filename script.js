@@ -53,6 +53,28 @@ typeEffect();
 
 
 
+
+// navbar
+// কোড স্ক্রিপ্ট ঠিকঠাক লোড হয়েছে কিনা তা নিশ্চিত করার জন্য
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        // আপনার HTML-এ main-menu-nav ক্লাসে কোনো আইডি ছিল না, তাই সেটি স্ক্রিপ্ট দিয়ে সেট করে নেওয়া হলো
+        const menuContainer = document.querySelector('.main-menu-nav');
+
+        if (hamburgerBtn && menuContainer) {
+            hamburgerBtn.addEventListener('click', function (e) {
+                e.stopPropagation(); // ক্লিক ইভেন্ট যেন বাবল না করে
+                menuContainer.classList.toggle('active');
+                hamburgerBtn.classList.toggle('open');
+            });
+        }
+    });
+
+
+
 // Customer feedback 
 
 
