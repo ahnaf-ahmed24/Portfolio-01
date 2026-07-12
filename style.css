@@ -349,7 +349,7 @@ html {
 /* গ্রিড লেআউট (৩ কলাম) */
 .demo-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 40px;
   max-width: 80%;
   margin: 0 auto;
