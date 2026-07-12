@@ -44,7 +44,7 @@ html {
 
 /* লোগো পার্ট */
 .nav-left img {
-    height: 80px; /* লোগোর সাইজ লম্বায় সেট করার জন্য */
+    height: auto; /* লোগোর সাইজ লম্বায় সেট করার জন্য */
     width: auto;
     object-fit: contain;
     border-radius: 10%; /* ছবির ইনবিও লোগোর মতো গোল করার জন্য */
@@ -104,7 +104,7 @@ html {
 
 .full-navber .main-menu-nav ul li {
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.50;
     color: #878e99;
     display: block !important;
@@ -131,7 +131,7 @@ html {
 .pn-btn {
     text-decoration: none;
     color: #878e99;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 
