@@ -7,7 +7,9 @@
 
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 
@@ -21,6 +23,72 @@
     position: sticky;
 }
 
+/* --- নেভবার স্টাইল --- */
+.full-navber {
+    position: fixed; /* স্ক্রল করলেও যেন ওপরে আটকে থাকে */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* যেন কোনো এলিমেন্ট এর ওপরে চলে না যায় */
+    background-color: #1e2125; /* ডার্ক ব্যাকগ্রাউন্ড */
+    border-bottom: 1px solid #2d3136; /* নিচে হালকা বর্ডার */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* নিচের দিকে হালকা শ্যাডো */
+    
+    display: flex;
+    justify-content: space-between; /* লোগো, মেনু ও বাটনকে সমান দূরত্বে রাখবে */
+    align-items: center;
+    padding: 15px 50px; /* ডানে-বামে এবং ওপরে-নিচে স্পেসিং */
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+/* লোগো পার্ট */
+.nav-left img {
+    height: 80px; /* লোগোর সাইজ লম্বায় সেট করার জন্য */
+    width: auto;
+    object-fit: contain;
+    border-radius: 10%; /* ছবির ইনবিও লোগোর মতো গোল করার জন্য */
+}
+
+/* মাঝখানের মেনু পার্ট */
+.main-menu-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+    /* মেনুর ভেতরের লিংকগুলোর পারস্পরিক দূরত্ব */
+}
+
+
+/* ডানপাশের PURCHASE NOW বাটন পার্ট */
+.pn-btn {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; 
+    /* নিওমরফিজম শ্যাডো ইফেক্ট */
+    transition: all 0.3s ease;
+}
+
+/* বাটনে মাউস নিলে ব্যাকগ্রাউন্ড ও কালার পরিবর্তন */
+.pn-btn:hover {
+    background-color: #ff014f;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 1, 79, 0.4);
+    transform: translateY(-2px); /* হালকা একটু ওপরে উঠবে */
+}
+
+/* --- মোবাইল রেসপনসিভ (ঐচ্ছিক কিন্তু দরকারি) --- */
+@media (max-width: 992px) {
+    .full-navber {
+        padding: 15px 20px;
+    }
+    .main-menu-nav {
+        display: none; /* মোবাইলে মেনু হাইড রাখার জন্য, পরবর্তীতে হ্যামবার্গার মেনু করতে পারেন */
+    }
+}
 
 
 .full-navber .main-menu-nav ul {
@@ -103,7 +171,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 30px 0;
+    margin: 0px 0;
     padding: 40px;
 }
 
@@ -111,6 +179,7 @@
     word-break: break-word;
     font-style: normal;
     font-weight: 200;
+    margin-top: 200px;
 }
 
 
@@ -641,6 +710,98 @@ font-size: 22px;
         font-size: 32px;
     }
 }
+
+
+
+
+
+
+
+
+
+/* gallery-portfolio */
+
+
+
+
+
+
+
+/* মূল সেকশনের স্টাইল */
+.gallery-portfolio {
+  background-color: #212428; /* ডার্ক ব্যাকগ্রাউন্ড */
+  padding: 80px 40px;
+  font-family: sans-serif;
+}
+
+/* টাইটেল সেকশন */
+.gallery-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.gallery-title span {
+  color: #ff014f;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.gallery-title h2 {
+  color: #c4cfde;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 120px;
+}
+
+/* ম্যাসনরি র্যাপার (এখানেই মূল ট্রিক) */
+.gallery-masonry-wrapper {
+  column-count: 3; /* কলামের সংখ্যা ৩টি */
+  column-gap: 30px; /* কলামগুলোর মাঝের দূরত্ব */
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/* প্রতিটি ইমেজের বক্স বা আইটেম */
+.gallery-item {
+  background-color: #1e2024;
+  border-radius: 10px;
+  margin-bottom: 30px; /* ওপর-নিচের দূরত্ব */
+  break-inside: avoid; /* ইমেজ যেন কলামের মাঝে ভেঙে না যায় */
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+/* ইমেজের উইথ সমান এবং হাইট অটো করার জন্য */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* রেসপন্সিভ (ট্যাবলেট ও মোবাইলের জন্য) */
+@media (max-width: 992px) {
+  .gallery-masonry-wrapper {
+    column-count: 2; /* ট্যাবলেটে ২টি কলাম দেখাবে */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-masonry-wrapper {
+    column-count: 1; /* মোবাইলে ১টি কলাম দেখাবে */
+  }
+}
+
+
+
+
+
 
 
 /* Customer feedback  */
