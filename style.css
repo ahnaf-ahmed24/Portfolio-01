@@ -24,14 +24,14 @@ html {
 }
 
 #live-clock {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #ff014f; /* PURCHASE NOW বাটনের কালারের সাথে ম্যাচ করে */
 }
 
 #live-date {
-    font-size: 18px;
+    font-size: 14px;
     color: #a0aec0;
     margin-top: 2px;
 }
