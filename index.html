@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 01</title>
     <link rel="stylesheet" href="style.css">
-
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <header class="hero-header">
         <nav class="full-navber">
             <div class="nav-left">
                 <img src="./images/logo.png" alt="Logo" srcset="">
             </div>
-
             <div class="hamburger-menu" id="hamburger-btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
             <div class="main-menu-nav">
                 <ul>
                     <li><a href="">VIEW DEMO</a></li>
@@ -46,26 +37,36 @@
                     </span>
                 </a>
             </div>
+            <div class="clock-container">
+    <!-- ক্লক এবং ডেট ডিসপ্লে -->
+    <div id="live-clock">00:00:00 PM</div>
+    <div id="live-date">Loading date...</div>
+    
+    <!-- সময় পরিবর্তনের কন্ট্রোলস (এডমিন বা আপনার চেঞ্জের জন্য) -->
+    <div class="clock-settings">
+        <button id="toggle-settings-btn" onclick="toggleSettings()">Change Time</button>
+        <div id="settings-panel" style="display: none;">
+            <input type="datetime-local" id="custom-time-input">
+            <button onclick="setCustomTime()">Apply</button>
+            <button onclick="resetToRealTime()" style="background-color: #555;">Reset</button>
+        </div>
+    </div>
+</div>
+
         </nav>
 
         <div class="hero">
             <h1>All in One <br>
                 Personal Portfolio for</h1>
         </div>
-
+        
         <section class="banner">
             <h1>
                 <span id="typing"></span>
                 <span class="cursor">|</span>
             </h1>
         </section>
-
-
-
-
-
         <section class="hero-card-main">
-
             <div class="hero-card">
                 <span class="hero-card-icon">
                     <i class="fa-solid fa-bolt"></i>
@@ -76,11 +77,8 @@
                     and dozens of other improvements.
                 </p>
             </div>
-
-
             <div class="hero-card">
                 <span class="hero-card-icon">
-
                     <i class="fa-solid fa-mobile-screen"></i>
                 </span>
                 <h2>Clean Code</h2>
@@ -89,8 +87,6 @@
                     practices.
                 </p>
             </div>
-
-
             <div class="hero-card">
                 <span class="hero-card-icon">
                     <i class="fa-regular fa-life-ring"></i>
@@ -100,32 +96,24 @@
                     We are provide 24 hours support for all clients.You can purchase without hesitation.
                 </p>
             </div>
-
         </section>
     </header>
-
-
     <main>
         <section class="feature-bar">
-
             <div class="feature-track">
-
                 <!-- প্রথম সেট -->
                 <div class="feature-item">
                     <span class="check"><i class="fa-solid fa-check"></i></span>
                     SEO Optimized
                 </div>
-
                 <div class="feature-item">
                     <span class="check"><i class="fa-solid fa-check"></i></span>
                     30+ Custom Elements
                 </div>
-
                 <div class="feature-item">
                     <span class="check"><i class="fa-solid fa-check"></i></span>
                     It's Super Fast
                 </div>
-
                 <div class="feature-item">
                     <span class="check"><i class="fa-solid fa-check"></i></span>
                     One-click Demo Import
@@ -365,31 +353,6 @@
 
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Awesome Feature -->

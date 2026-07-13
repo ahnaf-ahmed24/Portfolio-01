@@ -334,6 +334,80 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+let timeOffset = 0; // রিয়েল টাইম ও কাস্টম টাইমের পার্থক্য হিসেব করার জন্য
+
+function updateClock() {
+    // বর্তমান সময়ের সাথে অফসেট যোগ করে সময় বের করা
+    let currentTime = new Date(new Date().getTime() + timeOffset);
+    
+    // সময় ফরম্যাট (Hours:Minutes:Seconds AM/PM)
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    
+    hours = hours % 12;
+    hours = hours ? hours : 12; // 0 কে 12 বানানোর জন্য
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    
+    let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+    
+    // তারিখ ফরম্যাট
+    let options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    let dateString = currentTime.toLocaleDateString('en-US', options);
+    
+    // UI আপডেট
+    document.getElementById('live-clock').textContent = timeString;
+    document.getElementById('live-date').textContent = dateString;
+}
+
+// প্রতি সেকেন্ডে ঘড়ি আপডেট হবে
+setInterval(updateClock, 1000);
+updateClock();
+
+// সেটিংস প্যানেল হাইড/শো করার জন্য
+function toggleSettings() {
+    let panel = document.getElementById('settings-panel');
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+}
+
+// নিজের মতো টাইম সেট করার ফাংশন
+function setCustomTime() {
+    let inputVal = document.getElementById('custom-time-input').value;
+    if (!inputVal) {
+        alert("দয়া করে একটি সঠিক তারিখ ও সময় সিলেক্ট করুন!");
+        return;
+    }
+    
+    let customSelectedTime = new Date(inputVal).getTime();
+    let realCurrentTime = new Date().getTime();
+    
+    // কাস্টম টাইম ও রিয়েল টাইমের ডিফারেন্স সেট করা
+    timeOffset = customSelectedTime - realCurrentTime;
+    
+    updateClock();
+    toggleSettings(); // প্যানেল বন্ধ করার জন্য
+}
+
+// পুনরায় আসল লাইভ টাইমে ফেরত যাওয়ার জন্য
+function resetToRealTime() {
+    timeOffset = 0;
+    updateClock();
+    toggleSettings();
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

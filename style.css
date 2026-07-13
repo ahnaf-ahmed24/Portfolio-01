@@ -12,6 +12,100 @@ html {
 }
 
 
+
+
+
+
+.clock-container {
+    text-align: right;
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+#live-clock {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ff014f; /* PURCHASE NOW বাটনের কালারের সাথে ম্যাচ করে */
+}
+
+#live-date {
+    font-size: 18px;
+    color: #a0aec0;
+    margin-top: 2px;
+}
+
+/* সেটিংস প্যানেলের ডিজাইন */
+.clock-settings {
+    margin-top: 5px;
+}
+
+#toggle-settings-btn {
+    background: none;
+    border: none;
+    color: #718096;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+}
+
+#toggle-settings-btn:hover {
+    color: #ffffff;
+}
+
+#settings-panel {
+    background: #1f242d;
+    padding: 8px;
+    border-radius: 6px;
+    position: absolute;
+    right: 20px;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+#settings-panel input {
+    background: #12161f;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+#settings-panel button {
+    background: #ff014f;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- নেভবার মেইন কন্টেইনার --- */
 .full-navber {
     font-family: "Roboto Mono", monospace;
