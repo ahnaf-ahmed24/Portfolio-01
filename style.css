@@ -101,6 +101,88 @@ html {
 
 
 
+/* রিসেট এবং বেসিক সেটআপ */
+
+
+/* কন্টাক্ট বক্সের ডিজাইন */
+.contact-section {
+    text-align: center;
+    padding: 40px 60px;  
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #f0f6fc;
+}
+
+.contact-section p {
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* বাটনগুলোর সাধারণ ডিজাইন */
+.icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: #181a1d;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    cursor: pointer;
+}
+
+/* হুভার এফেক্ট: মাউস নিলে উপরে উঠবে */
+.icon-btn:hover {
+    transform: translateY(-8px);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* আলাদা আলাদা ব্র্যান্ড কালার এবং গ্লো (Glow) এফেক্ট */
+.facebook:hover { background: #1877F2; box-shadow: 0 0 20px #1877F2; }
+.instagram:hover { background: #E1306C; box-shadow: 0 0 20px #E1306C; }
+.github:hover { background: #f0f6fc; color: #010409; box-shadow: 0 0 20px #ffffff; }
+.envelope:hover { background: #EA4335; box-shadow: 0 0 20px #EA4335; }
+.whatsapp:hover { background: #25D366; box-shadow: 0 0 20px #25D366; }
+.discord:hover { background: #5865F2; box-shadow: 0 0 20px #5865F2; }
+
+/* ক্লিক করার মুহূর্তের এফেক্ট (পুশ ডাউন) */
+.icon-btn:active {
+    transform: translateY(-2px) scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

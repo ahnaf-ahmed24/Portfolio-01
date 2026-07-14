@@ -317,6 +317,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// ক্লিকি সাউন্ড জেনারেট করার ফাংশন (Web Audio API)
+function playClickSound() {
+    // অডিও কনটেক্সট তৈরি করা
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    
+    // অসিলেটর এবং গেইন নোড তৈরি
+    const oscillator = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+    
+    oscillator.type = 'sine'; // নরম ও মিষ্টি সাউন্ডের জন্য সাইন ওয়েভ
+    oscillator.frequency.setValueAtTime(800, audioCtx.currentTime); // শুরুর ফ্রিকোয়েন্সি
+    oscillator.frequency.exponentialRampToValueAtTime(150, audioCtx.currentTime + 0.1); // দ্রুত ফ্রিকোয়েন্সি ড্রপ
+    
+    // ভলিউম এবং স্থায়িত্ব (খুবই দ্রুত সাউন্ড শেষ হবে যাতে ক্লিক মনে হয়)
+    gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+    
+    // কানেকশন
+    oscillator.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+    
+    // সাউন্ড প্লে করা
+    oscillator.start();
+    oscillator.stop(audioCtx.currentTime + 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

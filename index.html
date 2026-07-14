@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="hero-header">
         <nav class="full-navber">
@@ -38,20 +40,20 @@
                 </a>
             </div>
             <div class="clock-container">
-    <!-- ক্লক এবং ডেট ডিসপ্লে -->
-    <div id="live-clock">00:00:00 PM</div>
-    <div id="live-date">Loading date...</div>
-    
-    <!-- সময় পরিবর্তনের কন্ট্রোলস (এডমিন বা আপনার চেঞ্জের জন্য) -->
-    <div class="clock-settings">
-        <button id="toggle-settings-btn" onclick="toggleSettings()">Change Time</button>
-        <div id="settings-panel" style="display: none;">
-            <input type="datetime-local" id="custom-time-input">
-            <button onclick="setCustomTime()">Apply</button>
-            <button onclick="resetToRealTime()" style="background-color: #555;">Reset</button>
-        </div>
-    </div>
-</div>
+                <!-- ক্লক এবং ডেট ডিসপ্লে -->
+                <div id="live-clock">00:00:00 PM</div>
+                <div id="live-date">Loading date...</div>
+
+                <!-- সময় পরিবর্তনের কন্ট্রোলস (এডমিন বা আপনার চেঞ্জের জন্য) -->
+                <div class="clock-settings">
+                    <button id="toggle-settings-btn" onclick="toggleSettings()">Change Time</button>
+                    <div id="settings-panel" style="display: none;">
+                        <input type="datetime-local" id="custom-time-input">
+                        <button onclick="setCustomTime()">Apply</button>
+                        <button onclick="resetToRealTime()" style="background-color: #555;">Reset</button>
+                    </div>
+                </div>
+            </div>
 
         </nav>
 
@@ -59,7 +61,7 @@
             <h1>All in One <br>
                 Personal Portfolio for</h1>
         </div>
-        
+
         <section class="banner">
             <h1>
                 <span id="typing"></span>
@@ -97,6 +99,13 @@
                 </p>
             </div>
         </section>
+
+
+
+
+
+
+
     </header>
     <main>
         <section class="feature-bar">
@@ -928,6 +937,44 @@
 
             <div class="button-area">
                 <a href="./html/purchase-now.html" class="purchase-btn">PURCHASE NOW</a>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="contact-section">
+            <!-- <h2>যোগাযোগ করুন</h2>  -->
+            <h2>Connect With Us</h2>
+            <p>Feel free to reach out via social media or email</p>
+            <hr>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ahnaf.ahmed.antor24" target="_blank" class="icon-btn facebook"
+                    onclick="playClickSound()">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/ahnaf_ahmed_antor/" target="_blank" class="icon-btn instagram"
+                    onclick="playClickSound()">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/ahnaf-ahmed24" target="_blank" class="icon-btn github"
+                    onclick="playClickSound()">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:your-email@example.com" class="icon-btn envelope" onclick="playClickSound()">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="icon-btn whatsapp"
+                    onclick="playClickSound()">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" class="icon-btn discord"
+                    onclick="playClickSound()">
+                    <i class="fab fa-discord"></i>
+                </a>
             </div>
         </section>
     </div>
